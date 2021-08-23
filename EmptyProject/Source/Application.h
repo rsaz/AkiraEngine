@@ -6,7 +6,8 @@ class Application : public IApplication
 public:
 	Application();
 	~Application();
-	
+
+	void LoadGameSettings() override;
 	void Start() override;
 	void Update() override;
 };

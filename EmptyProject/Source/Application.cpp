@@ -7,9 +7,14 @@ ENTRYAPP(Application)
 Application::Application() {}
 Application::~Application() {}
 
+void Application::LoadGameSettings()
+{
+}
+
 void Application::Start()
 {
-	MessageBox(0, L"Start Callback", 0, 0);
+	Logger::Print(L"Loaded using logger");
+	//MessageBox(0, L"Start Callback", 0, 0);
 }
 void Application::Update()
 {

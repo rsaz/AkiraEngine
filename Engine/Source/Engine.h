@@ -12,3 +12,6 @@
 
 #define MAX_NAME_STRING 256
 #define HInstance() GetModuleHandle(NULL)
+
+#include "Common/Logger.h"
+#include "Core/GameSettings.h"
