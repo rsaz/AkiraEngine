@@ -17,18 +17,18 @@ LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam);
 #pragma endregion
 
 #pragma region Operations
-int CALLBACK WinMain(_In_ HINSTANCE, _In_opt_ HINSTANCE, _In_ LPSTR, _In_ INT)
-{
-	InitializeVaribales();
-
-	CreateRegisterWindowClass();
-	
-	DisplayWindow();
-
-	MessageLoop();
-
-	return 0;
-}
+//int CALLBACK WinMain(_In_ HINSTANCE, _In_opt_ HINSTANCE, _In_ LPSTR, _In_ INT)
+//{
+//	InitializeVaribales();
+//
+//	CreateRegisterWindowClass();
+//	
+//	DisplayWindow();
+//
+//	MessageLoop();
+//
+//	return 0;
+//}
 
 LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 {

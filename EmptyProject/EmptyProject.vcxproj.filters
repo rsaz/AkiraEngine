@@ -9,9 +9,6 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="Source\Private">
-      <UniqueIdentifier>{35bec974-83a9-4a9b-a40c-b75cb0bcf0c0}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source\Public">
       <UniqueIdentifier>{879d819b-c320-4965-9537-dad2ec258cf2}</UniqueIdentifier>
     </Filter>
@@ -21,13 +18,19 @@
     <Filter Include="Resources\Icons">
       <UniqueIdentifier>{5c5bdb5a-802b-4bf5-a99a-29754a92ad4d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\Private">
+      <UniqueIdentifier>{397e2427-3f83-476e-b795-9ebe2721a44e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Source\pch.cpp">
+      <Filter>Source\pch</Filter>
+    </ClCompile>
     <ClCompile Include="Source\WinMain.cpp">
       <Filter>Source\Private</Filter>
     </ClCompile>
-    <ClCompile Include="Source\pch.cpp">
-      <Filter>Source\pch</Filter>
+    <ClCompile Include="Source\Application.cpp">
+      <Filter>Source\Private</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -36,6 +39,9 @@
     </ClInclude>
     <ClInclude Include="resource.h">
       <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application.h">
+      <Filter>Source\Public</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

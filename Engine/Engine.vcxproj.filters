@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source\pch">
+      <UniqueIdentifier>{6b7080cf-5c31-418b-8120-370a00183198}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Private">
+      <UniqueIdentifier>{9674b45b-4af5-4c02-ba13-29a9224ec08f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Private\Platform">
+      <UniqueIdentifier>{2bc8bfe3-94a4-49a7-a7b9-ff5adc1069f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Private\Platform\WIN32">
+      <UniqueIdentifier>{8cae490c-aead-4417-8f2d-383deba0b8b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Public">
+      <UniqueIdentifier>{09e1bd75-e6f0-4f74-92c2-18a3f2179ab1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Public\Platform">
+      <UniqueIdentifier>{e85ca120-d0ff-483e-950c-13125411724f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Public\Platform\WIN32">
+      <UniqueIdentifier>{740a8d20-5136-453a-8b36-946df563a882}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Engine.cpp">
+      <Filter>Source\pch</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Platform\WIN32\IApplication.cpp">
+      <Filter>Source\Private\Platform\WIN32</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Engine.h">
+      <Filter>Source\pch</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Platform\WIN32\IApplication.h">
+      <Filter>Source\Public\Platform\WIN32</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Platform\WIN32\WinEntry.h">
+      <Filter>Source\Public\Platform\WIN32</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
