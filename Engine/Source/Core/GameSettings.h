@@ -21,5 +21,14 @@ public:
 	static GameSettings* Instance();
 
 	// Implement Getters and Setters 35::55
+	static WCHAR* GameName() { return instance->gameName; }
+	static void SetGameName(UINT id) { LoadString(HInstance(), id, instance->gameName, MAX_NAME_STRING); }
 
+	static WCHAR* ShortName() { return instance->gameName; }
+	static void SetShortName(UINT id) { LoadString(HInstance(), id, instance->shortName, MAX_NAME_STRING); }
+
+	static HICON MainIcon() { return instance->mainIcon; }
+	static void SetMainIcon(UINT id) { LoadIcon(HInstance(), MAKEINTRESOURCE(id)); }
+
+	static WCHAR* StartTime() { return instance->startTime; }
 };

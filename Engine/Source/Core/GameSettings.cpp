@@ -5,11 +5,11 @@ GameSettings* GameSettings::instance{ nullptr };
 std::mutex GameSettings::mutex_;
 
 GameSettings::GameSettings()
-	:gameName(L""), shortName(L""), mainIcon(nullptr), startTime(L"")
+	:gameName(L""), shortName(L""), mainIcon(nullptr), 
+	startTime(L"")
 {
-	wcscpy_s(instance->gameName, L"undefined");
-	wcscpy_s(instance->shortName, L"undefined");
-	wcscpy_s(instance->startTime, L"undefined");
+	instance = this;
+	wcscpy_s(instance->startTime, Time::GetDateTimeString(TRUE).c_str());
 }
 
 GameSettings::~GameSettings()

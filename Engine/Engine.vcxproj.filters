@@ -56,6 +56,9 @@
     <ClCompile Include="Source\Core\GameSettings.cpp">
       <Filter>Source\Private\Core</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Common\Time.cpp">
+      <Filter>Source\Private\Common</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Engine.h">
@@ -72,6 +75,9 @@
     </ClInclude>
     <ClInclude Include="Source\Core\GameSettings.h">
       <Filter>Source\Public\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Common\Time.h">
+      <Filter>Source\Public\Common</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

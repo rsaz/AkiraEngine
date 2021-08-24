@@ -18,4 +18,12 @@ public:
 
 	static void Print(const WCHAR* fmt, ...);
 	static std::wstring LogDirectory();
+	static std::wstring LogFile();
+
+	/* Priting trail and Mtail implementation for log */
+	static void PrintDebugSeparator();
+
+	static bool IsMTailRunning();
+
+	static void StartMtail();
 };

@@ -91,7 +91,7 @@ END
 
 // Icon with lowest ID value placed first to ensure application icon
 // remains consistent on all systems.
-IDI_MAINICON               ICON                    "content\\Icons\\main.ico"
+IDI_MAINICON            ICON                    "content\\Icons\\main.ico"
 
 
 /////////////////////////////////////////////////////////////////////////////
@@ -103,6 +103,7 @@ STRINGTABLE
 BEGIN
     IDS_PERGAMENAME         "Empty Project"
     IDS_WINDOWCLASS         "GameWindow"
+    IDS_SHORTNAME           "EP"
 END
 
 #endif    // Portuguese (Brazil) resources

@@ -177,6 +177,7 @@
     <ClInclude Include="Source\pch.h" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="content\Icons\main.ico" />
     <Image Include="Content\mainIcon.ico" />
   </ItemGroup>
   <ItemGroup>

@@ -168,12 +168,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Source\Common\Logger.cpp" />
+    <ClCompile Include="Source\Common\Time.cpp" />
     <ClCompile Include="Source\Core\GameSettings.cpp" />
     <ClCompile Include="Source\Engine.cpp" />
     <ClCompile Include="Source\Platform\WIN32\IApplication.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Common\Logger.h" />
+    <ClInclude Include="Source\Common\Time.h" />
     <ClInclude Include="Source\Core\GameSettings.h" />
     <ClInclude Include="Source\Engine.h" />
     <ClInclude Include="Source\Platform\WIN32\IApplication.h" />

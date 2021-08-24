@@ -48,6 +48,7 @@
     <Image Include="Content\mainIcon.ico">
       <Filter>Resources\Icons</Filter>
     </Image>
+    <Image Include="content\Icons\main.ico" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="EmptyProject.rc">
