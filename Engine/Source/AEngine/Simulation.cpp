@@ -1,5 +1,6 @@
 #include "Engine.h"
 #include "Simulation.h"
+#include "AEngine/SplashScreen.h"
 
 Engine::Simulation::Simulation()
 {
@@ -19,5 +20,5 @@ void Engine::Simulation::Awake()
 
 	Logger::PrintDebugSeparator();
 
-	//SplashScreen::Open();
+	SplashScreen::Open();
 }

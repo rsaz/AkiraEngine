@@ -5,7 +5,7 @@
 
 namespace SplashScreen
 {
-	#define WM_OUTPUTMESSAGE(WM_USER + 0x0001);
+	#define WM_OUTPUTMESSAGE (WM_USER + 0x0001);
 
 	SplashWindow* splashWindow;
 
@@ -15,7 +15,7 @@ namespace SplashScreen
 		{
 			return;
 		}
-		splashWindow = new SplashWindow;
+		splashWindow = new SplashWindow();
 	}
 
 	void Close()
@@ -25,8 +25,7 @@ namespace SplashScreen
 
 	void AddMessage(const WCHAR* message)
 	{
-		// Fix 1:15
-		//PostMessage(splashWindow->GetHandle(), WM_OUTPUTMESSAGE, (WPARAM)message, 0);
+		PostMessage(splashWindow->GetHandle(), 0x0004 + 0x0001, (WPARAM)message, 0);
 	}
 }
 
@@ -69,10 +68,10 @@ LRESULT SplashWindow::MessageHandler(HWND hwnd, UINT message, WPARAM wParam, LPA
 		EndPaint(hwnd, &ps);
 	}
 	break;
-	case WM_OUTPUTMESSAGE:
+	case 0x0004+0x0001:
 	{
 		WCHAR* msg = (WCHAR*)wParam;
-		wcscpy_s(m_outputMessage, msg);
+		wcscpy_s(outputMessage, msg);
 		RedrawWindow(GetHandle(), NULL, NULL, RDW_INVALIDATE);
 		return 0;
 	}
