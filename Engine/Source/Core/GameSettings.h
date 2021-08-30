@@ -11,6 +11,7 @@ private:
 	WCHAR shortName[MAX_NAME_STRING];
 	HICON mainIcon;
 	WCHAR startTime[MAX_NAME_STRING];
+	WCHAR splashURL[MAX_NAME_STRING];
 protected:
 	GameSettings();
 	~GameSettings();
@@ -31,4 +32,7 @@ public:
 	static void SetMainIcon(UINT id) { LoadIcon(HInstance(), MAKEINTRESOURCE(id)); }
 
 	static WCHAR* StartTime() { return instance->startTime; }
+
+	static WCHAR* SplashURL() { return instance->splashURL; }
+	static VOID SetSplashURL(UINT id) { LoadString(HInstance(), id, instance->splashURL, MAX_NAME_STRING); }
 };
